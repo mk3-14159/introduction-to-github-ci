@@ -27,7 +27,7 @@ jobs:
 
       # This is supposed to create an error in the build, will fix on next step
       - name: Run markdown lint
-        run: 
+        run: |
           npm install remark-cli remark-present-lint-consistent
           npx remark . --use remark-present-lint-consistent --frail
 
